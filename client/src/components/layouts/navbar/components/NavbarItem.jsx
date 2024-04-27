@@ -1,11 +1,14 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
-const NavbarItem = ({ url, children }) => {
+const NavbarItem = ({ label, href, icon }) => {
+  const Icon = icon;
+
   return (
-    <a href={url} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-      {children}
-    </a>
+    <Link to={href} className="navbar-item">
+      <Icon className="navbar-item-icon" />
+      <span className="navbar-item-label">{label}</span>
+    </Link>
   );
-}
+};
 
 export default NavbarItem;

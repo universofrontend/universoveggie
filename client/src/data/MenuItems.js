@@ -1,9 +1,12 @@
+import { GoPersonFill } from "react-icons/go";
+import { FaUtensils, FaClipboardList, FaHome, FaHeart, FaShoppingCart, FaChartBar } from 'react-icons/fa';
+
 export  const menuItems = [
-    { label: 'Profile', href: '/profile' },
-    { label: 'Recipes', href: '/recipes' },
-    { label: 'Meal Plans', href: '/mealPlans' },
-    { label: 'Home', href: '/' },
-    { label: 'Favorites', href: '/favorites' },
-    { label: 'Shopping Lists', href: '/shoppingLists' },
-    { label: 'Statistics', href: '/statistics' }
+    { label: 'Home', href: '/', icon: FaHome },
+    { label: 'Recipes', href: '/recetas', icon: FaUtensils },
+    { label: 'Profile', href: '/perfil', icon: GoPersonFill },
+    { label: 'Meal Plans', href: '/planes', icon: FaClipboardList },
+    { label: 'Favorites', href: '/favoritas', icon: FaHeart },
+    { label: 'Shopping Lists', href: '/listasdelacompra', icon: FaShoppingCart },
+    { label: 'Statistics', href: '/estadisticas', icon: FaChartBar }
 ];

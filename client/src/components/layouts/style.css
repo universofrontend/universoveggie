@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* Cambiado a 100vw */
+    background: #fff;
+}
+
+.container-layout {
+    display: flex;
+    height: 90vh;
+    width: 90vw; /* Cambiado a 90vw */
+    flex-direction: row;
+    background-color: #EDEFF1;
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.container-menu {
+    background: #fff;
+    width: 15%;
+    border-radius: 10px 0 0 10px;
+}
+
+.container-contain {
+    background-color: #EDEFF1;
+    width: 80%;
+}

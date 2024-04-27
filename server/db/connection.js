@@ -24,6 +24,6 @@ try {
     console.error
 }
 
-let db = client.db("users");
+let db = client.db("appveggiedb");
 
 export default db;
